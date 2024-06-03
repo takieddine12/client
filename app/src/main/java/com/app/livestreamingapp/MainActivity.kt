@@ -49,6 +49,10 @@ class MainActivity : AppCompatActivity() {
                 setupRemoteVideo(uid)
             }
         }
+
+        override fun onUserOffline(uid: Int, reason: Int) {
+            super.onUserOffline(uid, reason)
+        }
     }
 
 
